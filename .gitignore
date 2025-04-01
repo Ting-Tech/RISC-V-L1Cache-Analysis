@@ -1,32 +1,81 @@
-# Prerequisites
-*.d
-
-# Compiled Object files
-*.slo
-*.lo
+# 編譯產物
 *.o
-*.obj
-
-# Precompiled Headers
-*.gch
-*.pch
-
-# Compiled Dynamic libraries
+*.lo
+*.la
+*.al
+*.libs
+*.a
+*.la
 *.so
+*.so.*
 *.dylib
 *.dll
-
-# Fortran module files
-*.mod
-*.smod
-
-# Compiled Static libraries
-*.lai
-*.la
-*.a
-*.lib
-
-# Executables
 *.exe
 *.out
-*.app
+*.class
+*.jar
+
+# C/C++ IDE 相關
+.idea/
+.vscode/
+*.swp
+*.swo
+*.DS_Store
+*.vcxproj*
+CMakeCache.txt
+CMakeFiles/
+Makefile
+cmake_install.cmake
+compile_commands.json
+
+# C/C++ 產生的中間文件
+*.d
+*.obj
+*.pdb
+*.idb
+*.ilk
+*.ncb
+*.sdf
+*.suo
+*.ipch
+*.res
+*.rsp
+*.pch
+*.mod
+*.tlog/
+
+# Ruby 相關
+*.gem
+*.rbc
+*.rbenv-version
+/.bundle/
+vendor/bundle/
+gemfiles/
+Gemfile.lock
+
+# Ruby on Rails 相關
+log/*
+tmp/*
+db/*.sqlite3
+db/*.sqlite3-journal
+public/system/*
+public/uploads/*
+node_modules/
+coverage/
+.byebug_history
+spring/
+tmp/pids/
+tmp/cache/
+tmp/sockets/
+.env
+.envrc
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# 其他
+*.log
+*.bak
+*.old
+*.swp

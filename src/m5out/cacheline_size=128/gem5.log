@@ -11,8 +11,8 @@ gem5 is copyrighted software; use the --copyright option for details.
 
 gem5 version 23.1.0.0
 gem5 compiled May 15 2024 23:40:27
-gem5 started May 22 2024 11:01:15
-gem5 executing on ip135-149.wlan.ntust.edu.tw, pid 41362
+gem5 started Apr  1 2025 17:11:46
+gem5 executing on ip149-165.wlan.ntust.edu.tw, pid 65653
 command line: ../build/RISCV/gem5.opt ../configs/deprecated/example/se.py --caches --l1i_size=8kB --l1i_assoc=2 --l1d_size=8kB --l1d_assoc=2 --cacheline_size=128 -c ./main
 
 **** REAL SIMULATION ****
