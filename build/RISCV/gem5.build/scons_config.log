@@ -1,0 +1,394 @@
+file /Users/hao/Playground/gem5/site_scons/gem5_scons/configure.py,line 171:
+	Configure(confdir = build/RISCV/gem5.build/scons_config)
+scons: Configure: Checking for linker -Wl,--as-needed support... 
+build/RISCV/gem5.build/scons_config/conftest_da935ab7a2c376c10f2ce1130ab88c51_0.cc <-
+  |int main(int, char *[]) { return 0; }
+(B[m [     CXX] [33mRISCV/gem5.build/scons_config/conftest_da935ab7a2c376c10f2ce1130ab88c51_0[33m[1m.cc[34m[1m -> [33m[1m.o(B[m
+(B[m [    LINK] [33m[33m[1m[34m[1m -> [33m[1mRISCV/gem5.build/scons_config/conftest_da935ab7a2c376c10f2ce1130ab88c51_0_a138c212024f63a3322bebb3fb9b5553(B[m
+ld: unknown options: --as-needed 
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+scons: Configure: no
+
+
+file /Users/hao/Playground/gem5/site_scons/gem5_scons/configure.py,line 171:
+	Configure(confdir = build/RISCV/gem5.build/scons_config)
+
+file /Users/hao/Playground/gem5/site_scons/gem5_scons/configure.py,line 171:
+	Configure(confdir = build/RISCV/gem5.build/scons_config)
+scons: Configure: Checking for compiler -Wno-c99-designator support... 
+build/RISCV/gem5.build/scons_config/conftest_342d5457cbf4639ef3e0d4fb7b8ef89b_0.cc <-
+  |// CheckCxxFlag DO NOTHING
+(B[m [     CXX] [33mRISCV/gem5.build/scons_config/conftest_342d5457cbf4639ef3e0d4fb7b8ef89b_0[33m[1m.cc[34m[1m -> [33m[1m_847143c371a56d00946858b200a7eb3c.o(B[m
+scons: Configure: yes
+
+scons: Configure: Checking for compiler -Wno-defaulted-function-deleted support... 
+build/RISCV/gem5.build/scons_config/conftest_342d5457cbf4639ef3e0d4fb7b8ef89b_1.cc <-
+  |// CheckCxxFlag DO NOTHING
+(B[m [     CXX] [33mRISCV/gem5.build/scons_config/conftest_342d5457cbf4639ef3e0d4fb7b8ef89b_1[33m[1m.cc[34m[1m -> [33m[1m_45a48427ab614912d15112a0437dd4b6.o(B[m
+scons: Configure: yes
+
+
+file /Users/hao/Playground/gem5/site_scons/gem5_scons/configure.py,line 171:
+	Configure(confdir = build/RISCV/gem5.build/scons_config)
+scons: Configure: Checking for compiler -gz support... 
+build/RISCV/gem5.build/scons_config/conftest_342d5457cbf4639ef3e0d4fb7b8ef89b_2.cc <-
+  |// CheckCxxFlag DO NOTHING
+(B[m [     CXX] [33mRISCV/gem5.build/scons_config/conftest_342d5457cbf4639ef3e0d4fb7b8ef89b_2[33m[1m.cc[34m[1m -> [33m[1m_9328dea263ad5f645d7e50104bc15f26.o(B[m
+scons: Configure: yes
+
+scons: Configure: Checking for linker -gz support... 
+build/RISCV/gem5.build/scons_config/conftest_da935ab7a2c376c10f2ce1130ab88c51_1.cc <-
+  |int main(int, char *[]) { return 0; }
+(B[m [     CXX] [33mRISCV/gem5.build/scons_config/conftest_da935ab7a2c376c10f2ce1130ab88c51_1[33m[1m.cc[34m[1m -> [33m[1m.o(B[m
+(B[m [    LINK] [33m[33m[1m[34m[1m -> [33m[1mRISCV/gem5.build/scons_config/conftest_da935ab7a2c376c10f2ce1130ab88c51_1_f18729afe8988371fa0e715ad905c9e2(B[m
+ld: warning: ignoring duplicate libraries: '-lc++'
+scons: Configure: yes
+
+
+file /Users/hao/Playground/gem5/site_scons/gem5_scons/configure.py,line 171:
+	Configure(confdir = build/RISCV/gem5.build/scons_config)
+
+file /Users/hao/Playground/gem5/site_scons/gem5_scons/configure.py,line 171:
+	Configure(confdir = build/RISCV/gem5.build/scons_config)
+scons: Configure: Checking for C header file Python.h... 
+build/RISCV/gem5.build/scons_config/conftest_6f79fff2b5fa95157216534d203df494_0.c <-
+  |
+  |#include <Python.h>
+  |
+  |
+(B[m [      CC] [33mRISCV/gem5.build/scons_config/conftest_6f79fff2b5fa95157216534d203df494_0[33m[1m.c[34m[1m -> [33m[1m_8c2d4efd07171fff31d2de142d498db6.o(B[m
+scons: Configure: yes
+
+scons: Configure: Checking Python version... 
+build/RISCV/gem5.build/scons_config/conftest_2176b2d932a60acfa5b4079f6e5ab92b_0.cc <-
+  |
+  |#include <pybind11/embed.h>
+  |
+  |int
+  |main(int argc, char **argv) {
+  |    pybind11::scoped_interpreter guard{};
+  |    pybind11::exec(
+  |        "import sys\n"
+  |        "vi = sys.version_info\n"
+  |        "sys.stdout.write('%i.%i.%i' % (vi.major, vi.minor, vi.micro));\n");
+  |    return 0;
+  |}
+  |    
+(B[m [     CXX] [33mRISCV/gem5.build/scons_config/conftest_2176b2d932a60acfa5b4079f6e5ab92b_0[33m[1m.cc[34m[1m -> [33m[1m.o(B[m
+(B[m [    LINK] [33m[33m[1m[34m[1m -> [33m[1mRISCV/gem5.build/scons_config/conftest_2176b2d932a60acfa5b4079f6e5ab92b_0_4884dd345371b576cd0d22f2f3aaa44e(B[m
+ld: warning: ignoring duplicate libraries: '-lc++'
+build/RISCV/gem5.build/scons_config/conftest_2176b2d932a60acfa5b4079f6e5ab92b_0_4884dd345371b576cd0d22f2f3aaa44e > build/RISCV/gem5.build/scons_config/conftest_2176b2d932a60acfa5b4079f6e5ab92b_0_4884dd345371b576cd0d22f2f3aaa44e.out
+scons: Configure: 3.12.3
+
+
+file /Users/hao/Playground/gem5/site_scons/gem5_scons/configure.py,line 171:
+	Configure(confdir = build/RISCV/gem5.build/scons_config)
+scons: Configure: Checking for accept(0,0,0) in C++ library None... 
+build/RISCV/gem5.build/scons_config/conftest_fa6044680a630c4a205df174495c137c_0.cpp <-
+  |
+  |
+  |#include "sys/socket.h"
+  |
+  |int main(void) {
+  |  accept(0,0,0);
+  |return 0;
+  |}
+  |
+(B[m [     CXX] [33mRISCV/gem5.build/scons_config/conftest_fa6044680a630c4a205df174495c137c_0[33m[1m.cpp[34m[1m -> [33m[1m.o(B[m
+(B[m [    LINK] [33m[33m[1m[34m[1m -> [33m[1mRISCV/gem5.build/scons_config/conftest_fa6044680a630c4a205df174495c137c_0_d9731fc3098323ec469facc42bc8fc0e(B[m
+ld: warning: ignoring duplicate libraries: '-lc++'
+scons: Configure: yes
+
+scons: Configure: Checking for zlibVersion() in C++ library z... 
+build/RISCV/gem5.build/scons_config/conftest_dc915a928df035c3500ecc014c4c1694_0.cpp <-
+  |
+  |
+  |#include "zlib.h"
+  |
+  |int main(void) {
+  |  zlibVersion();
+  |return 0;
+  |}
+  |
+(B[m [     CXX] [33mRISCV/gem5.build/scons_config/conftest_dc915a928df035c3500ecc014c4c1694_0[33m[1m.cpp[34m[1m -> [33m[1m.o(B[m
+(B[m [    LINK] [33m[33m[1m[34m[1m -> [33m[1mRISCV/gem5.build/scons_config/conftest_dc915a928df035c3500ecc014c4c1694_0_ba349acf1eced50f7ab947755483dae4(B[m
+ld: warning: ignoring duplicate libraries: '-lc++'
+scons: Configure: yes
+
+
+file /Users/hao/Playground/gem5/site_scons/gem5_scons/configure.py,line 171:
+	Configure(confdir = build/RISCV/gem5.build/scons_config)
+scons: Configure: Checking for C library tcmalloc_minimal... 
+build/RISCV/gem5.build/scons_config/conftest_e492448966d6e04631c094ba6d6e8a32_0.c <-
+  |
+  |
+  |
+  |int main(void) {
+  |  
+  |return 0;
+  |}
+  |
+(B[m [      CC] [33mRISCV/gem5.build/scons_config/conftest_e492448966d6e04631c094ba6d6e8a32_0[33m[1m.c[34m[1m -> [33m[1m.o(B[m
+(B[m [    LINK] [33m[33m[1m[34m[1m -> [33m[1mRISCV/gem5.build/scons_config/conftest_e492448966d6e04631c094ba6d6e8a32_0_aec5502bd2593029300f185ccf9b6b30(B[m
+ld: library 'tcmalloc_minimal' not found
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+scons: Configure: no
+
+scons: Configure: Checking for C library tcmalloc... 
+build/RISCV/gem5.build/scons_config/conftest_e492448966d6e04631c094ba6d6e8a32_1.c <-
+  |
+  |
+  |
+  |int main(void) {
+  |  
+  |return 0;
+  |}
+  |
+(B[m [      CC] [33mRISCV/gem5.build/scons_config/conftest_e492448966d6e04631c094ba6d6e8a32_1[33m[1m.c[34m[1m -> [33m[1m.o(B[m
+(B[m [    LINK] [33m[33m[1m[34m[1m -> [33m[1mRISCV/gem5.build/scons_config/conftest_e492448966d6e04631c094ba6d6e8a32_1_41c6f153ead17814a5310be866fdb819(B[m
+ld: library 'tcmalloc' not found
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+scons: Configure: no
+
+
+file /Users/hao/Playground/gem5/site_scons/gem5_scons/configure.py,line 171:
+	Configure(confdir = build/RISCV/gem5.build/scons_config)
+
+file /Users/hao/Playground/gem5/site_scons/gem5_scons/configure.py,line 171:
+	Configure(confdir = build/RISCV/gem5.build/scons_config)
+scons: Configure: Checking for C header file capstone/capstone.h... 
+build/RISCV/gem5.build/scons_config/conftest_228713437195dd19f42492507090c16d_0.c <-
+  |
+  |#include <capstone/capstone.h>
+  |
+  |
+(B[m [      CC] [33mRISCV/gem5.build/scons_config/conftest_228713437195dd19f42492507090c16d_0[33m[1m.c[34m[1m -> [33m[1m_4e96110ea8c27784ab586133fc27041f.o(B[m
+build/RISCV/gem5.build/scons_config/conftest_228713437195dd19f42492507090c16d_0.c:2:10: fatal error: 'capstone/capstone.h' file not found
+#include <capstone/capstone.h>
+         ^~~~~~~~~~~~~~~~~~~~~
+1 error generated.
+scons: Configure: no
+
+
+file /Users/hao/Playground/gem5/site_scons/gem5_scons/configure.py,line 171:
+	Configure(confdir = build/RISCV/gem5.build/scons_config)
+scons: Configure: Checking for C header file linux/kvm.h... 
+build/RISCV/gem5.build/scons_config/conftest_3d4db39b7cb946e659f69394900767da_0.c <-
+  |
+  |#include <linux/kvm.h>
+  |
+  |
+(B[m [      CC] [33mRISCV/gem5.build/scons_config/conftest_3d4db39b7cb946e659f69394900767da_0[33m[1m.c[34m[1m -> [33m[1m_b2c9cec9ec514f32cc79e1b81e463cc8.o(B[m
+build/RISCV/gem5.build/scons_config/conftest_3d4db39b7cb946e659f69394900767da_0.c:2:10: fatal error: 'linux/kvm.h' file not found
+#include <linux/kvm.h>
+         ^~~~~~~~~~~~~
+1 error generated.
+scons: Configure: no
+
+
+file /Users/hao/Playground/gem5/site_scons/gem5_scons/configure.py,line 171:
+	Configure(confdir = build/RISCV/gem5.build/scons_config)
+scons: Configure: Checking for C header file linux/if_tun.h... 
+build/RISCV/gem5.build/scons_config/conftest_479afe281e6dd1a87a0a74ae5e0195a7_0.c <-
+  |
+  |#include <linux/if_tun.h>
+  |
+  |
+(B[m [      CC] [33mRISCV/gem5.build/scons_config/conftest_479afe281e6dd1a87a0a74ae5e0195a7_0[33m[1m.c[34m[1m -> [33m[1m_dc2a829c7dee700174c443fb52d804f4.o(B[m
+build/RISCV/gem5.build/scons_config/conftest_479afe281e6dd1a87a0a74ae5e0195a7_0.c:2:10: fatal error: 'linux/if_tun.h' file not found
+#include <linux/if_tun.h>
+         ^~~~~~~~~~~~~~~~
+1 error generated.
+scons: Configure: no
+
+
+file /Users/hao/Playground/gem5/site_scons/gem5_scons/configure.py,line 171:
+	Configure(confdir = build/RISCV/gem5.build/scons_config)
+scons: Configure: Checking for backtrace_symbols_fd((void *)1, 0, 0) in C library None... 
+build/RISCV/gem5.build/scons_config/conftest_45b7ea2111de8d730f6af4800b419fef_0.c <-
+  |
+  |
+  |#include "execinfo.h"
+  |
+  |int main(void) {
+  |  backtrace_symbols_fd((void *)1, 0, 0);
+  |return 0;
+  |}
+  |
+(B[m [      CC] [33mRISCV/gem5.build/scons_config/conftest_45b7ea2111de8d730f6af4800b419fef_0[33m[1m.c[34m[1m -> [33m[1m.o(B[m
+(B[m [    LINK] [33m[33m[1m[34m[1m -> [33m[1mRISCV/gem5.build/scons_config/conftest_45b7ea2111de8d730f6af4800b419fef_0_93b52f395adea2fd1b36cdf0a6796e88(B[m
+scons: Configure: yes
+
+
+file /Users/hao/Playground/gem5/site_scons/gem5_scons/configure.py,line 171:
+	Configure(confdir = build/RISCV/gem5.build/scons_config)
+scons: Configure: Checking for C header file fenv.h... 
+build/RISCV/gem5.build/scons_config/conftest_b63620e7908057d9c68909c7dea2f0c0_0.c <-
+  |
+  |#include <fenv.h>
+  |
+  |
+(B[m [      CC] [33mRISCV/gem5.build/scons_config/conftest_b63620e7908057d9c68909c7dea2f0c0_0[33m[1m.c[34m[1m -> [33m[1m_ca10d13725a58fa11c0df110dad86ceb.o(B[m
+scons: Configure: yes
+
+scons: Configure: Checking for C header file png.h... 
+build/RISCV/gem5.build/scons_config/conftest_6a115e90d1ef31132299ba5de9361ca4_0.c <-
+  |
+  |#include <png.h>
+  |
+  |
+(B[m [      CC] [33mRISCV/gem5.build/scons_config/conftest_6a115e90d1ef31132299ba5de9361ca4_0[33m[1m.c[34m[1m -> [33m[1m_b9438fbe8c41a6bc49d3d84eb3f062d2.o(B[m
+build/RISCV/gem5.build/scons_config/conftest_6a115e90d1ef31132299ba5de9361ca4_0.c:2:10: fatal error: 'png.h' file not found
+#include <png.h>
+         ^~~~~~~
+1 error generated.
+scons: Configure: no
+
+scons: Configure: Checking for clock_nanosleep(0,0,NULL,NULL) in C library None... 
+build/RISCV/gem5.build/scons_config/conftest_3d9727f0784ca6f48b402eb829b556f2_0.c <-
+  |
+  |
+  |#include "time.h"
+  |
+  |int main(void) {
+  |  clock_nanosleep(0,0,NULL,NULL);
+  |return 0;
+  |}
+  |
+(B[m [      CC] [33mRISCV/gem5.build/scons_config/conftest_3d9727f0784ca6f48b402eb829b556f2_0[33m[1m.c[34m[1m -> [33m[1m.o(B[m
+build/RISCV/gem5.build/scons_config/conftest_3d9727f0784ca6f48b402eb829b556f2_0.c:6:3: error: call to undeclared function 'clock_nanosleep'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  clock_nanosleep(0,0,NULL,NULL);
+  ^
+1 error generated.
+scons: Configure: no
+
+scons: Configure: Checking for clock_nanosleep(0,0,NULL,NULL) in C library rt... 
+build/RISCV/gem5.build/scons_config/conftest_3d9727f0784ca6f48b402eb829b556f2_1.c <-
+  |
+  |
+  |#include "time.h"
+  |
+  |int main(void) {
+  |  clock_nanosleep(0,0,NULL,NULL);
+  |return 0;
+  |}
+  |
+(B[m [      CC] [33mRISCV/gem5.build/scons_config/conftest_3d9727f0784ca6f48b402eb829b556f2_1[33m[1m.c[34m[1m -> [33m[1m.o(B[m
+build/RISCV/gem5.build/scons_config/conftest_3d9727f0784ca6f48b402eb829b556f2_1.c:6:3: error: call to undeclared function 'clock_nanosleep'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  clock_nanosleep(0,0,NULL,NULL);
+  ^
+1 error generated.
+scons: Configure: no
+
+scons: Configure: Checking for C header file valgrind/valgrind.h... 
+build/RISCV/gem5.build/scons_config/conftest_fc44fbdd5cf1cbd0f4445fc96a17746b_0.c <-
+  |
+  |#include "valgrind/valgrind.h"
+  |
+  |
+(B[m [      CC] [33mRISCV/gem5.build/scons_config/conftest_fc44fbdd5cf1cbd0f4445fc96a17746b_0[33m[1m.c[34m[1m -> [33m[1m_21c53684b7453e7874bb757369ed6031.o(B[m
+build/RISCV/gem5.build/scons_config/conftest_fc44fbdd5cf1cbd0f4445fc96a17746b_0.c:2:10: fatal error: 'valgrind/valgrind.h' file not found
+#include "valgrind/valgrind.h"
+         ^~~~~~~~~~~~~~~~~~~~~
+1 error generated.
+scons: Configure: no
+
+
+file /Users/hao/Playground/gem5/site_scons/gem5_scons/configure.py,line 171:
+	Configure(confdir = build/RISCV/gem5.build/scons_config)
+build/RISCV/gem5.build/scons_config/conftest_5a5d5db21b8c0c10baa6ac0764f01dca_0.cc <-
+  |
+  |            int main() {return 0;}
+  |            namespace [[gnu::deprecated("Test namespace deprecation")]]
+  |            test_deprecated_namespace {}
+  |        
+(B[m [     CXX] [33mRISCV/gem5.build/scons_config/conftest_5a5d5db21b8c0c10baa6ac0764f01dca_0[33m[1m.cc[34m[1m -> [33m[1m_7698390cf542132d5835a5b14be70b0a.o(B[m
+
+file /Users/hao/Playground/gem5/site_scons/gem5_scons/configure.py,line 171:
+	Configure(confdir = build/RISCV/gem5.build/scons_config)
+scons: Configure: Checking for pkg-config package hdf5-serial... 
+pkg-config hdf5-serial
+scons: Configure: no
+
+scons: Configure: Checking for pkg-config package hdf5... 
+pkg-config hdf5
+scons: Configure: no
+
+scons: Configure: Checking for H5Fcreate("", 0, 0, 0) in C library hdf5... 
+build/RISCV/gem5.build/scons_config/conftest_405a27e3c1c4653876e1e3238e8ed875_0.c <-
+  |
+  |
+  |#include "hdf5.h"
+  |
+  |int main(void) {
+  |  H5Fcreate("", 0, 0, 0);
+  |return 0;
+  |}
+  |
+(B[m [      CC] [33mRISCV/gem5.build/scons_config/conftest_405a27e3c1c4653876e1e3238e8ed875_0[33m[1m.c[34m[1m -> [33m[1m.o(B[m
+build/RISCV/gem5.build/scons_config/conftest_405a27e3c1c4653876e1e3238e8ed875_0.c:3:10: fatal error: 'hdf5.h' file not found
+#include "hdf5.h"
+         ^~~~~~~~
+1 error generated.
+scons: Configure: no
+
+
+file /Users/hao/Playground/gem5/site_scons/gem5_scons/configure.py,line 171:
+	Configure(confdir = build/RISCV/gem5.build/scons_config)
+scons: Configure: Checking for shm_open("/test", 0, 0) in C library None... 
+build/RISCV/gem5.build/scons_config/conftest_b4e440fe1099a7d4a124ee9f6c6af6d9_0.c <-
+  |
+  |
+  |#include "sys/mman.h"
+  |
+  |int main(void) {
+  |  shm_open("/test", 0, 0);
+  |return 0;
+  |}
+  |
+(B[m [      CC] [33mRISCV/gem5.build/scons_config/conftest_b4e440fe1099a7d4a124ee9f6c6af6d9_0[33m[1m.c[34m[1m -> [33m[1m.o(B[m
+(B[m [    LINK] [33m[33m[1m[34m[1m -> [33m[1mRISCV/gem5.build/scons_config/conftest_b4e440fe1099a7d4a124ee9f6c6af6d9_0_a5166a403c625bd99cb389264c5f69d4(B[m
+scons: Configure: yes
+
+
+file /Users/hao/Playground/gem5/site_scons/gem5_scons/configure.py,line 171:
+	Configure(confdir = build/RISCV/gem5.build/scons_config)
+scons: Configure: Checking whether __i386__ is declared... 
+build/RISCV/gem5.build/scons_config/conftest_35422207c1ff9f87810e3f3cf05741b3_0.c <-
+  |
+  |int main(void)
+  |{
+  |#ifndef __i386__
+  |    (void) __i386__;
+  |#endif
+  |    ;
+  |    return 0;
+  |}
+  |
+(B[m [      CC] [33mRISCV/gem5.build/scons_config/conftest_35422207c1ff9f87810e3f3cf05741b3_0[33m[1m.c[34m[1m -> [33m[1m_4ec13e8c2ffd31b8064f22e121b5a0c7.o(B[m
+build/RISCV/gem5.build/scons_config/conftest_35422207c1ff9f87810e3f3cf05741b3_0.c:5:12: error: use of undeclared identifier '__i386__'
+    (void) __i386__;
+           ^
+1 error generated.
+scons: Configure: no
+
+scons: Configure: Checking whether __x86_64__ is declared... 
+build/RISCV/gem5.build/scons_config/conftest_fc5c667aeab98cc869c22ec2d558eb9d_0.c <-
+  |
+  |int main(void)
+  |{
+  |#ifndef __x86_64__
+  |    (void) __x86_64__;
+  |#endif
+  |    ;
+  |    return 0;
+  |}
+  |
+(B[m [      CC] [33mRISCV/gem5.build/scons_config/conftest_fc5c667aeab98cc869c22ec2d558eb9d_0[33m[1m.c[34m[1m -> [33m[1m_ee56813ac080bf2140e1b9d8d871ea6c.o(B[m
+build/RISCV/gem5.build/scons_config/conftest_fc5c667aeab98cc869c22ec2d558eb9d_0.c:5:12: error: use of undeclared identifier '__x86_64__'
+    (void) __x86_64__;
+           ^
+1 error generated.
+scons: Configure: no
+
+
